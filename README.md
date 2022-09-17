@@ -35,7 +35,7 @@
  </tr>
  <tr>
    <td>click</td>
-   <td><\button click="">Click me!</button></td>
-   <td><\button click="alert('FRICK YEAHHHH'">Click me!</button></td>
+   <td><\button click="">Click me!<\/button></td>
+   <td><\button click="alert('FRICK YEAHHHH'">Click me!<\/button></td>
  </tr>
 </table>
