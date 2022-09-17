@@ -5,6 +5,7 @@
 <h2>Documention</h2>
 <table>
 <tr>
-  <th>Özellik</th>  
+  <th>Özellik</th>
+  <td>Örnek</td>
 </tr>
 </table>
