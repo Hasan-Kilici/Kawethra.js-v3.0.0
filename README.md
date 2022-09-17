@@ -4,9 +4,14 @@
 <li>Kullanım Basitleştirildi</li>
 <h2>Documention</h2>
 <table style='width:100%'>
-<tr>
-  <th>Özellik</th>
-  <th>Örnek</th>
-  <th>Kullanım</th>
-</tr>
+ <tr>
+   <th>Özellik</th>
+   <th>Örnek</th>
+   <th>Kullanım</th>
+ </tr>
+ <tr>
+   <td>CSS</td>
+   <td>kw.css.property("query","value");</td>
+   <td>kw.css.background("body","red");</td>
+ </tr>
 </table>
