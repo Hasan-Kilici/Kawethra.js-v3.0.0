@@ -24,6 +24,25 @@
    <td>kw.show("query","delay");</td>
    <td>kw.show(".class",3000);</td>  
  </tr>
+ <tr>
+  <th>Theme</td>
+  <td>kw.theme.theme</td>
+  <td>kw.theme.dark</td>
+</tr>
+<tr>
+  <th>Onload</th>
+  <td>kw.onload(`function`)</td>
+  <td>kw.onload(`<br>
+    alert("Example")<br>
+   `) </td>
+</tr>
+<tr>
+ <th>HTML Lang</th>
+  <td>setLang()</td>
+  <td>kw.api.onload(`<br>
+    setLang()<br>
+   `) </td>
+</tr>
 </table>
 <h2></h2>
 <h3>Documention (HTML SIDE)</h3>
