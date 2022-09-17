@@ -67,4 +67,16 @@
    <td><\button hover="">hover me!<\/button></td>
    <td><\button hover="alert('FRICK YEAHHHH'">hover me!<\/button></td>
  </tr>
+   <tr>
+  <th>Outo Change theme</th>
+  <td>chanceTheme()</td>
+   <td>
+    <script><br>
+    kw.api.onload(`<br>
+    chanceTheme()<br>
+   `) <br>
+     </script><br>
+     < body theme="dark"></body>
+     </td>
+</tr>
 </table>
