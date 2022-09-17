@@ -38,4 +38,14 @@
    <td><\button click="">Click me!<\/button></td>
    <td><\button click="alert('FRICK YEAHHHH'">Click me!<\/button></td>
  </tr>
+  <tr>
+   <td>dblclick</td>
+   <td><\button dblclick="">Double Click me!<\/button></td>
+   <td><\button dblclick="alert('FRICK YEAHHHH'">Double Click me!<\/button></td>
+ </tr>
+  <tr>
+   <td>hover</td>
+   <td><\button hover="">hover me!<\/button></td>
+   <td><\button hover="alert('FRICK YEAHHHH'">hover me!<\/button></td>
+ </tr>
 </table>
