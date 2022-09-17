@@ -1,3 +1,3 @@
-<h4>Kawethra.js v3.0.0</h4>
+<h2>Kawethra.js v3.0.0</h2>
 <hr>
-<h5>Yeni Eklenenler!</h5>
+<h3>Yeni Eklenenler!</h3>
