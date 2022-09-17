@@ -6,6 +6,7 @@
 <table>
 <tr>
   <th>Özellik</th>
-  <td>Örnek</td>
+  <th>Örnek</th>
+  <th>Kullanım</th>
 </tr>
 </table>
