@@ -3,3 +3,8 @@
 <li>click, double click ve hover Özellikleri eklendi</li>
 <li>Kullanım Basitleştirildi</li>
 <h2>Documention</h2>
+<table>
+<tr>
+  <th>Özellik</th>  
+</tr>
+</table>
