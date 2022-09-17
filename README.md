@@ -25,3 +25,12 @@
    <td>kw.show(".class",3000);</td>  
  </tr>
 </table>
+<h2></h2>
+<h3>Documention (HTML SIDE)</h3>
+<table>
+ <tr>
+  <th>Özellik</th>
+  <th>Örnek</th>
+  <th>Kullanım</th>
+ </tr>
+</table>
