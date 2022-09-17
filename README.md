@@ -3,7 +3,7 @@
 <li>click, double click ve hover Özellikleri eklendi</li>
 <li>Kullanım Basitleştirildi</li>
 <h2>Documention</h2>
-<table width=100%>
+<table width="100%">
 <tr>
   <th>Özellik</th>
   <th>Örnek</th>
