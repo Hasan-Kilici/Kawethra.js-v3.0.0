@@ -14,4 +14,9 @@
    <td>kw.css.property("query","value");</td>
    <td>kw.css.background("body","red");</td>
  </tr>
+ <tr>
+   <td>Hide</td>
+   <td>kw.hide("query","delay");</td>
+   <td>kw.hide(".class",3000);</td>
+ </tr>
 </table>
