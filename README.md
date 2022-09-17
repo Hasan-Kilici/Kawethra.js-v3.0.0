@@ -17,7 +17,11 @@
  <tr>
    <td>Hide</td>
    <td>kw.hide("query","delay");</td>
-   <td>kw.hide(".class",3000);</td>
-   
+   <td>kw.hide(".class",3000);</td>  
+ </tr>
+ <tr>
+   <td>Show</td>
+   <td>kw.show("query","delay");</td>
+   <td>kw.show(".class",3000);</td>  
  </tr>
 </table>
