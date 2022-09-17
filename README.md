@@ -2,7 +2,7 @@
 <h3>Yeni Eklenenler!</h3>
 <li>click, double click ve hover Özellikleri eklendi</li>
 <li>Kullanım Basitleştirildi</li>
-<h2>Documention</h2>
+<h2>Documention (JS SIDE)</h2>
 <table style='width:100%'>
  <tr>
    <th>Özellik</th>
@@ -18,5 +18,6 @@
    <td>Hide</td>
    <td>kw.hide("query","delay");</td>
    <td>kw.hide(".class",3000);</td>
+   
  </tr>
 </table>
