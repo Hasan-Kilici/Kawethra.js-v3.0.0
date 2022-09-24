@@ -547,252 +547,104 @@ let data = {
   },
  },
 };
-//Click func
-var all = document.querySelector("*");
-let func;
-all.addEventListener('click',function(e){
-switch(e.srcElement.attributes[0].name){
-  case "click":
-  func = e.srcElement.attributes[0].value;
-  eval(func)
-  console.clear()
-  break;
+
+document.addEventListener("click", (e)=>{
+  let element = e.srcElement;
+  let click = element.getAttribute("click");
+  let kwclick = element.getAttribute("kw:click");
+  eval(click);
+  eval(kwclick);
+})
+
+document.addEventListener("dblclick", (e)=>{
+  let element = e.srcElement;
+  let dblclick = element.getAttribute("dblclick");
+  let kwdblclick = element.getAttribute("kw:dblclick");
+  eval(dblclick);
+  eval(kwdblclick);
+})
+
+document.addEventListener("mouseover", (e)=>{
+  let element = e.srcElement;
+  let hover = element.getAttribute("hover");
+  let kwhover = element.getAttribute("kw:hover");
+  eval(hover);
+  eval(kwhover);
+})
+
+document.addEventListener("mouseout", (e)=>{
+  let element = e.srcElement;
+  let offhover = element.getAttribute("off:hover");
+  let kwoffhover = element.getAttribute("kw:off:hover");
+  eval(offhover);
+  eval(kwoffhover);
+})
+
+document.addEventListener("mouseup", (e)=>{
+  let element = e.srcElement;
+  let offclick = element.getAttribute("off:click");
+  let kwoffclick = element.getAttribute("kw:off:click");
+  eval(offclick);
+  eval(kwoffclick);
+})
+
+function useThemes(){
+let elements = document.querySelectorAll("*");
+ for(let i = 0;i < elements.length; i++){
+  let theme = elements[i].getAttribute("theme");
+   switch(theme){
+  case "dark":
+   document.body.style.backgroundColor = data.themeColors.dark.bg;
+   document.body.style.color = data.themeColors.dark.fg;
+   break;
+  case "light":
+   document.body.style.backgroundColor = data.themeColors.light.bg;
+   document.body.style.color = data.themeColors.light.fg;
+   break;
+  case "red":
+   document.body.style.backgroundColor = data.themeColors.red.bg;
+   document.body.style.color = data.themeColors.red.fg;
+   break;
+  case "orange":
+   document.body.style.backgroundColor = data.themeColors.orange.bg;
+   document.body.style.color = data.themeColors.orange.fg;
+   break;
+  case "yellow":
+   document.body.style.backgroundColor = data.themeColors.yellow.bg;
+   document.body.style.color = data.themeColors.yellow.fg;
+   break;
+  case "lime":
+   document.body.style.backgroundColor = data.themeColors.lime.bg;
+   document.body.style.color = data.themeColors.lime.fg;  
+   break;
+  case "green":
+   document.body.style.backgroundColor = data.themeColors.green.bg;
+   document.body.style.color = data.themeColors.green.fg;
+   break;
+  case "blue":
+   document.body.style.backgroundColor = data.themeColors.blue.bg;
+   document.body.style.color = data.themeColors.blue.fg;
+   break;
+  case "blurple":
+   document.body.style.backgroundColor = data.themeColors.blurple.bg;
+   document.body.style.color = data.themeColors.blurple.fg;
+   break;
+  case "purple":
+   document.body.style.backgroundColor = data.themeColors.purple.bg;
+   document.body.style.color = data.themeColors.purple.fg;
+   break;
+  case "magenta":
+   document.body.style.backgroundColor = data.themeColors.magenta.bg;
+   document.body.style.color = data.themeColors.magenta.fg;
+   break;
+  case "pink":
+   document.body.style.backgroundColor = data.themeColors.pink.bg;
+   document.body.style.color = data.themeColors.pink.fg;
+   break;
+   }
+ }
 }
-switch(e.srcElement.attributes[1].name){
-  case "click":
-  func = e.srcElement.attributes[1].value;
-  eval(func)
-  console.clear()
-  break;
+
+window.onload = ()=>{
+  useThemes()
 }
-switch(e.srcElement.attributes[2].name){
-  case "click":
-  func = e.srcElement.attributes[2].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[3].name){
-  case "click":
-  func = e.srcElement.attributes[3].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[4].name){
-  case "click":
-  func = e.srcElement.attributes[4].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[5].name){
-  case "click":
-  func = e.srcElement.attributes[5].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[0].name){
-  case "click":
-  func = e.srcElement.attributes[0].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[6].name){
-  case "click":
-  func = e.srcElement.attributes[6].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[7].name){
-  case "click":
-  func = e.srcElement.attributes[7].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[8].name){
-  case "click":
-  func = e.srcElement.attributes[8].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[9].name){
-  case "click":
-  func = e.srcElement.attributes[9].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[10].name){
-  case "click":
-  func = e.srcElement.attributes[10].value;
-  eval(func)
-  console.clear()
-  break;
-}
-});
-//Hover func
-all.addEventListener('mouseover',function(e){
-switch(e.srcElement.attributes[0].name){
-  case "hover":
-  func = e.srcElement.attributes[0].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[1].name){
-  case "hover":
-  func = e.srcElement.attributes[1].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[2].name){
-  case "hover":
-  func = e.srcElement.attributes[2].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[3].name){
-  case "hover":
-  func = e.srcElement.attributes[3].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[4].name){
-  case "hover":
-  func = e.srcElement.attributes[4].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[5].name){
-  case "hover":
-  func = e.srcElement.attributes[5].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[6].name){
-  case "hover":
-  func = e.srcElement.attributes[6].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[7].name){
-  case "hover":
-  func = e.srcElement.attributes[7].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[8].name){
-  case "hover":
-  func = e.srcElement.attributes[8].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[9].name){
-  case "hover":
-  func = e.srcElement.attributes[9].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[10].name){
-  case "hover":
-  func = e.srcElement.attributes[10].value;
-  eval(func)
-  console.clear()
-  break;
-}
-});
-//Double Click 
-all.addEventListener('dblclick',function(e){
-switch(e.srcElement.attributes[0].name){
-  case "dblclick":
-  func = e.srcElement.attributes[0].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[1].name){
-  case "dblclick":
-  func = e.srcElement.attributes[1].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[2].name){
-  case "dblclick":
-  func = e.srcElement.attributes[2].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[3].name){
-  case "dblclick":
-  func = e.srcElement.attributes[3].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[4].name){
-  case "dblclick":
-  func = e.srcElement.attributes[4].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[5].name){
-  case "dblclick":
-  func = e.srcElement.attributes[5].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[6].name){
-  case "dblclick":
-  func = e.srcElement.attributes[6].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[7].name){
-  case "dblclick":
-  func = e.srcElement.attributes[7].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[8].name){
-  case "dblclick":
-  func = e.srcElement.attributes[8].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[9].name){
-  case "dblclick":
-  func = e.srcElement.attributes[9].value;
-  eval(func)
-  console.clear()
-  break;
-}
-switch(e.srcElement.attributes[10].name){
-  case "dblclick":
-  func = e.srcElement.attributes[10].value;
-  eval(func)
-  console.clear()
-  break;
-}
-});
